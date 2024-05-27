@@ -6,7 +6,7 @@ public class Task6 {
         int i = 1;
         while (i < 10) {
             int res = k * i;
-            System.out.println(i + " * 5 = " + res);
+            System.out.println(i + " * " + k + " = " + res);
             i++;
         }
     }
