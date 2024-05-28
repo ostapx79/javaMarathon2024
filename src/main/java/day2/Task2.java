@@ -1,5 +1,7 @@
 package day2;
 
+import java.util.Scanner;
+
 public class Task2 {
     /*
     2. Есть два числа, которые задаются пользователем через консоль (назовем эти два числа a и b). Используя
@@ -19,7 +21,17 @@ public class Task2 {
     int a = scanner.nextInt();
     int b = scanner.nextInt();
      */
+    final static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+
+        if (a >= b) System.out.println("Некорректный ввод");
+        for (; a < b; a++) {
+            if (a % 5 == 0 && a % 10 != 0) {
+                System.out.print(a + " ");
+            }
+        }
 
     }
 }
